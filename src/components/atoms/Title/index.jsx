@@ -1,7 +1,7 @@
 const Title = () => (
   <>
-    <h1 class="title">Title</h1>
-    <h2 class="subtitle">Subtitle</h2>
+    <h1 className="title">Title</h1>
+    <h2 className="subtitle">Subtitle</h2>
   </>
 );
 
