@@ -22,7 +22,8 @@
     "sass:css": "node-sass --omit-source-map-url --output-style compressed sass/styles.scss",
     "styles:app": "npm run sass:css -- -o public/styles",
     "styles:storybook": "npm run sass:css -- -o .storybook",
-    "build:styles": "npm run styles:app && npm run styles:storybook"
+    "build:styles": "npm run styles:app && npm run styles:storybook",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -49,7 +50,8 @@
     "node-sass": "^7.0.3",
     "prettier": "^2.7.1",
     "prop-types": "^15.8.1",
-    "webpack": "^5.74.0"
+    "webpack": "^5.74.0",
+    "husky": "^8.0.0"
   },
   "eslintConfig": {
     "extends": [

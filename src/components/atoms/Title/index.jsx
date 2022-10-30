@@ -1,7 +1,10 @@
-const Title = () => (
+const Title = ({
+  title = null,
+  subtitle = null
+}) => (
   <>
-    <h1 className="title">Title</h1>
-    <h2 className="subtitle">Subtitle</h2>
+    { title && <h1 className="title">{title}</h1> }
+    { subtitle && <h2 className="subtitle">{subtitle}</h2> }
   </>
 );
 
