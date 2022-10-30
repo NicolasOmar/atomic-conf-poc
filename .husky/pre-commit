@@ -1,8 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm run prettier
+npx lint-staged
 npm run build:styles
-git add sass
-git add public/styles
-git add .storybook
+git add sass public/styles .storybook

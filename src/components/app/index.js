@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
-import "./index.css";
-import Title from "../atoms/Title";
+import logo from './logo.svg'
+import './index.css'
+import Title from '../atoms/Title'
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       </header>
       <Title />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

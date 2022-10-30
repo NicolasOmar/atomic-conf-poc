@@ -1,3 +1,3 @@
-const Box = (children) => <section class="box">{children}</section>;
+const Box = children => <section class="box">{children}</section>
 
 export default Box

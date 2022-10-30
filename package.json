@@ -48,10 +48,22 @@
     "babel-plugin-named-exports-order": "^0.0.2",
     "bulma": "^0.9.4",
     "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "node-sass": "^7.0.3",
     "prettier": "^2.7.1",
     "prop-types": "^15.8.1",
     "webpack": "^5.74.0"
+  },
+  "lint-staged": {
+    "src/**/*.!(*stories).jsx": [
+      "eslint --fix"
+    ],
+    "src/**/*.jsx": [
+      "prettier --write"
+    ],
+    "sass": [
+      "prettier --write"
+    ]
   },
   "eslintConfig": {
     "extends": [
