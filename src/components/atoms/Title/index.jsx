@@ -1,7 +1,7 @@
 import { string, oneOf } from 'prop-types'
 import bulmaStyles from '../../../constants/bulma-styles.json'
 
-const { size } = bulmaStyles
+const { textSizes } = bulmaStyles
 
 const Title = ({
   title = null,
@@ -9,8 +9,8 @@ const Title = ({
   subtitle = null,
   subtitleSize = 'default'
 }) => {
-  const titleStyle = `title ${size[titleSize]}`
-  const subtitleStyle = `title ${size[subtitleSize]}`
+  const titleStyle = `title ${textSizes[titleSize]}`
+  const subtitleStyle = `title ${textSizes[subtitleSize]}`
 
   return (
     <>
@@ -24,7 +24,7 @@ export default Title
 
 Title.propTypes = {
   title: string,
-  titleSize: oneOf(Object.keys(size)),
+  titleSize: oneOf(Object.keys(textSizes)),
   subtitle: string,
-  subtitleSize: oneOf(Object.keys(size))
+  subtitleSize: oneOf(Object.keys(textSizes))
 }

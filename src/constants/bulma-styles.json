@@ -1,5 +1,5 @@
 {
-  "size": {
+  "textSizes": {
     "bigger": "is-1",
     "big": "is-2",
     "default": "is-3",
@@ -25,7 +25,7 @@
     "1by2": "is-1by2",
     "1by3": "is-1by3"
   },
-  "buttonSizes": {
+  "commonSizes": {
     "small": "is-small",
     "default": "is-default",
     "normal": "is-normal",

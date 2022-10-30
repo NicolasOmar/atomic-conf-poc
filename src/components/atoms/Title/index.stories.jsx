@@ -7,10 +7,10 @@ export default {
   component: Title,
   argTypes: {
     titleSize: {
-      options: Object.keys(bulmaStyles.size)
+      options: Object.keys(bulmaStyles.textSizes)
     },
     subtitleSize: {
-      options: Object.keys(bulmaStyles.size)
+      options: Object.keys(bulmaStyles.textSizes)
     }
   }
 }

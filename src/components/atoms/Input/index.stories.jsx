@@ -1,10 +1,10 @@
-import Button from '.'
+import Input from '.'
 import bulmaStyles from '../../../constants/bulma-styles.json'
 import ROUTES from '../../../constants/routes.json'
 
 export default {
-  title: `${ROUTES.STORYBOOK.ATOMS}/Button`,
-  component: Button,
+  title: `${ROUTES.STORYBOOK.ATOMS}/Input`,
+  component: Input,
   argTypes: {
     color: {
       options: Object.keys(bulmaStyles.colors)
@@ -15,10 +15,7 @@ export default {
   }
 }
 
-const Template = args => <Button {...args} />
+const Template = args => <Input {...args} />
 
 export const Minimal = Template.bind({})
 Minimal.storyName = 'Ejemplo'
-Minimal.args = {
-  text: 'Botón'
-}
