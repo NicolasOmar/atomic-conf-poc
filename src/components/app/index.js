@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./index.css";
-import Title from "../atoms/Title"
+import Title from "../atoms/Title";
 
 function App() {
   return (

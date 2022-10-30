@@ -1,0 +1,10 @@
+{
+  "size": {
+    "bigger": "is-1",
+    "big": "is-2",
+    "default": "is-3",
+    "small": "is-4",
+    "smaller": "is-5",
+    "tiny": "is-6"
+  }
+}
