@@ -49,5 +49,5 @@ Card.propTypes = {
   header: oneOfType([element, arrayOf(element)]),
   image: shape(Image.propTypes),
   content: oneOfType([element, arrayOf(element)]),
-  footer: arrayOf([{ text: string }])
+  footer: arrayOf(shape({ text: string }))
 }
