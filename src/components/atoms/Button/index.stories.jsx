@@ -20,5 +20,6 @@ const Template = args => <Button {...args} />
 export const Example = Template.bind({})
 Example.storyName = 'Ejemplo'
 Example.args = {
-  text: 'Botón'
+  text: 'Botón',
+  color: 'info'
 }

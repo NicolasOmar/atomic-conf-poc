@@ -1,14 +1,13 @@
 import { element } from 'prop-types'
 
 const Footer = ({ children = null }) => {
-  const renderContent = () => (children ? { children } : null)
-  return (
+  return children ? (
     <footer className="footer">
       <section className="content has-text-centered">
-        <p>{renderContent()}</p>
+        <p>{children}</p>
       </section>
     </footer>
-  )
+  ) : null
 }
 
 export default Footer

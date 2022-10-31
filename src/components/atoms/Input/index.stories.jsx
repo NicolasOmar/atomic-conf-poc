@@ -19,3 +19,6 @@ const Template = args => <Input {...args} />
 
 export const Example = Template.bind({})
 Example.storyName = 'Ejemplo'
+Example.args = {
+  color: 'info'
+}

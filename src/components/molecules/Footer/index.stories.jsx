@@ -13,11 +13,10 @@ Example.storyName = 'Ejemplo'
 Example.args = {
   children: (
     <>
-      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source
-      code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website
-      content is licensed{' '}
-      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      <strong>WebConf 2022 | Diseño Atómico</strong> por{' '}
+      <a href="https://github.com/NicolasOmar">Nicolás Omar González Passerino</a>. El
+      código fuente tiene licencia
+      <a href="http://opensource.org/licenses/mit-license.php"> MIT</a>.
     </>
   )
 }
