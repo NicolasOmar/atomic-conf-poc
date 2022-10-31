@@ -17,5 +17,5 @@ export default {
 
 const Template = args => <Input {...args} />
 
-export const Minimal = Template.bind({})
-Minimal.storyName = 'Ejemplo'
+export const Example = Template.bind({})
+Example.storyName = 'Ejemplo'

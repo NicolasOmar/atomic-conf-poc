@@ -17,8 +17,8 @@ export default {
 
 const Template = args => <Button {...args} />
 
-export const Minimal = Template.bind({})
-Minimal.storyName = 'Ejemplo'
-Minimal.args = {
+export const Example = Template.bind({})
+Example.storyName = 'Ejemplo'
+Example.args = {
   text: 'Botón'
 }

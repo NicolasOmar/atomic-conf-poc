@@ -1,25 +1,16 @@
 import Card from '.'
-import bulmaStyles from '../../../constants/bulma-styles.json'
 import ROUTES from '../../../constants/routes.json'
 
 export default {
   title: `${ROUTES.STORYBOOK.MOLECULES}/Card`,
-  component: Card,
-  argTypes: {
-    color: {
-      options: Object.keys(bulmaStyles.colors)
-    },
-    size: {
-      options: Object.keys(bulmaStyles.commonSizes)
-    }
-  }
+  component: Card
 }
 
 const Template = args => <Card {...args} />
 
-export const Minimal = Template.bind({})
-Minimal.storyName = 'Ejemplo'
-Minimal.args = {
+export const Example = Template.bind({})
+Example.storyName = 'Ejemplo'
+Example.args = {
   header: <p>Lorem ipsum</p>,
   image: { src: 'https://bulma.io/images/placeholders/1280x960.png' },
   content: (
