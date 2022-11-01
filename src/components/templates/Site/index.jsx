@@ -1,18 +1,21 @@
+import { bool } from 'prop-types'
 import Title from '../../atoms/Title'
 import ButtonGroup from '../../molecules/ButtonGroup'
 import CardList from '../../organisms/CardList'
 import ColumnGrid from '../../organisms/ColumnGrid'
 import dummyData from './dummyData.json'
 
-const Site = () => {
+const Site = ({ useDummyData = false }) => {
   const siteStructure = [<Title />, <ButtonGroup />, <CardList />]
 
   const siteConfig = {
     isMultiline: true,
-    columns: dummyData.map(({ size, props }, i) =>
+    isHorizontalCenter: true,
+    columns: dummyData.map(({ size, offset, props }, i) =>
       siteStructure[i]
         ? {
             size,
+            offset,
             children: {
               ...siteStructure[i],
               props
@@ -21,9 +24,11 @@ const Site = () => {
         : null
     )
   }
-  return <ColumnGrid {...siteConfig} />
+  return useDummyData ? <ColumnGrid {...siteConfig} /> : null
 }
 
 export default Site
 
-Site.propTypes = {}
+Site.propTypes = {
+  useDummyData: bool
+}

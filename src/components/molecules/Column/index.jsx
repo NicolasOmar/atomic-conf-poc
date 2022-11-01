@@ -1,15 +1,20 @@
 import { element, oneOf } from 'prop-types'
 import bulmaStyles from '../../../constants/bulma-styles.json'
 
-const { columnSizes } = bulmaStyles
+const { columnSizes, columnOffsets } = bulmaStyles
 
-const Column = ({ size = '1', children = null }) => (
-  <section className={`column ${size ? columnSizes[size] : 'is-1'}`}>{children}</section>
-)
+const Column = ({ size = '1', offset = false, children = null }) => {
+  const columnStyles = `column${size ? ` ${columnSizes[size]}` : 'is-1'}${
+    offset ? ` ${columnOffsets[offset]}` : ''
+  }`
+
+  return <section className={columnStyles}>{children}</section>
+}
 
 export default Column
 
 Column.propTypes = {
   size: oneOf(Object.keys(columnSizes)),
+  offset: oneOf(Object.keys(columnOffsets)),
   children: element
 }

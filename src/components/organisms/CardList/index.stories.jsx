@@ -1,19 +1,23 @@
 import CardList from '.'
 import ROUTES from '../../../constants/routes.json'
-import ColumnGrid from '../ColumnGrid'
+import bulmaStyles from '../../../constants/bulma-styles.json'
 
 export default {
   title: `${ROUTES.STORYBOOK.ORGANISMS}/CardList`,
-  component: CardList
+  component: CardList,
+  argTypes: {
+    cardSize: {
+      options: Object.keys(bulmaStyles.columnSizes)
+    }
+  }
 }
 
-const Template = args => (
-  <ColumnGrid columns={[{ size: '12', children: <CardList {...args} /> }]} />
-)
+const Template = args => <CardList {...args} />
 
 export const Example = Template.bind({})
 Example.storyName = 'Ejemplo'
 Example.args = {
+  cardSize: '3',
   cards: Array.from({ length: 5 }, () => ({
     header: <p>Lorem ipsum</p>,
     image: { src: 'https://bulma.io/images/placeholders/1280x960.png' },

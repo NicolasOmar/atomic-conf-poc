@@ -3,7 +3,7 @@ import Button from '../../atoms/Button'
 
 const ButtonGroup = ({ buttons = null }) => {
   return buttons && Array.isArray(buttons) && buttons.length > 0 ? (
-    <section class="buttons has-addons">
+    <section className="buttons has-addons">
       {buttons.map((config, i) => (
         <Button key={`button-item-${i}`} {...config} />
       ))}

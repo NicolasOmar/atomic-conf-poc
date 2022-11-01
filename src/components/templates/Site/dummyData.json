@@ -1,28 +1,27 @@
 [
   {
-    "size": 12,
+    "size": "12",
     "props": {
-      "title": "Bienvenido a Diseño Atómico"
+      "title": "Prueba de plantilla"
     }
   },
   {
-    "size": 12,
+    "size": "12",
     "props": {
       "buttons": [
-        { "text": "uno"},
-        { "text": "dos"},
-        { "text": "tres"}
+        { "text": "uno" },
+        { "text": "dos" },
+        { "text": "tres" }
       ]
     }
   },
   {
-    "size": 4,
+    "size": "12",
     "props": {
+      "cardSize": "4",
       "cards": [
         {
-          "image": {
-            "src": "https://bulma.io/images/placeholders/1280x960.png"
-          },
+          "image": { "src": "https://bulma.io/images/placeholders/1280x960.png" },
           "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate",
           "footer": [
             { "text": "Test 1" },
@@ -30,9 +29,15 @@
           ]
         },
         {
-          "image": {
-            "src": "https://bulma.io/images/placeholders/1280x960.png"
-          },
+          "image": { "src": "https://bulma.io/images/placeholders/1280x960.png" },
+          "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate",
+          "footer": [
+            { "text": "Test 1" },
+            { "text": "Test 2" }
+          ]
+        },
+        {
+          "image": { "src": "https://bulma.io/images/placeholders/1280x960.png" },
           "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate",
           "footer": [
             { "text": "Test 1" },

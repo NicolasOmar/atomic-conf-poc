@@ -10,3 +10,6 @@ const Template = args => <Site {...args} />
 
 export const Example = Template.bind({})
 Example.storyName = 'Ejemplo'
+Example.args = {
+  useDummyData: true
+}
