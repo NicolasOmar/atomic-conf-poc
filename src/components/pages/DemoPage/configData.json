@@ -1,11 +1,11 @@
-[
-  {
+{
+  "title": {
     "size": "12",
     "props": {
       "title": "WebConf LATAM 2022 | Diseño Atómico"
     }
   },
-  {
+  "buttonGroup": {
     "size": "12",
     "props": {
       "buttons": [
@@ -24,11 +24,11 @@
       ]
     }
   },
-  {
+  "cardList": {
     "size": "12",
     "props": {
       "cardSize": "4",
-      "cards": [ ]
+      "cards": []
     }
   }
-]
+}

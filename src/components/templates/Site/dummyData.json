@@ -1,27 +1,38 @@
-[
-  {
+{
+  "title": {
     "size": "12",
     "props": {
       "title": "Prueba de plantilla"
     }
   },
-  {
+  "buttonGroup": {
     "size": "12",
     "props": {
       "buttons": [
-        { "text": "uno", "color": "info" },
-        { "text": "dos", "color": "danger" },
-        { "text": "tres", "color": "success" }
+        {
+          "text": "uno",
+          "color": "info"
+        },
+        {
+          "text": "dos",
+          "color": "danger"
+        },
+        {
+          "text": "tres",
+          "color": "success"
+        }
       ]
     }
   },
-  {
+  "cardList": {
     "size": "12",
     "props": {
       "cardSize": "4",
       "cards": [
         {
-          "image": { "src": "https://bulma.io/images/placeholders/1280x960.png" },
+          "image": {
+            "src": "https://bulma.io/images/placeholders/1280x960.png"
+          },
           "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate",
           "footer": [
             { "text": "Test 1" },
@@ -29,7 +40,9 @@
           ]
         },
         {
-          "image": { "src": "https://bulma.io/images/placeholders/1280x960.png" },
+          "image": {
+            "src": "https://bulma.io/images/placeholders/1280x960.png"
+          },
           "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate",
           "footer": [
             { "text": "Test 1" },
@@ -37,7 +50,9 @@
           ]
         },
         {
-          "image": { "src": "https://bulma.io/images/placeholders/1280x960.png" },
+          "image": {
+            "src": "https://bulma.io/images/placeholders/1280x960.png"
+          },
           "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate",
           "footer": [
             { "text": "Test 1" },
@@ -47,4 +62,4 @@
       ]
     }
   }
-]
+}

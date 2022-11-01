@@ -7,8 +7,8 @@ import bulmaStyles from '../../../constants/bulma-styles.json'
 
 const { columnSizes } = bulmaStyles
 
-const CardList = ({ cardSize = '1', cards = null }) =>
-  cards && Array.isArray(cards) && cards.length > 0 ? (
+const CardList = ({ cardSize = '1', cards = null }) => {
+  return cards && Array.isArray(cards) && cards.length > 0 ? (
     <section className="columns is-multiline">
       {cards.map((config, i) => (
         <Column key={`card-column-item-${i}`} size={cardSize}>
@@ -17,6 +17,7 @@ const CardList = ({ cardSize = '1', cards = null }) =>
       ))}
     </section>
   ) : null
+}
 
 export default CardList
 

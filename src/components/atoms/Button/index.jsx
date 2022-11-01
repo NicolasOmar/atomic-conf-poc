@@ -6,6 +6,7 @@ const { colors, commonSizes } = bulmaStyles
 
 const Button = ({
   text = null,
+  label = null,
   isLoading = false,
   color = 'white',
   isLightColor = false,
@@ -26,7 +27,11 @@ const Button = ({
   const buttonStyles = `button${btnColor}${btnSize}`
 
   return (
-    <button className={buttonStyles} disabled={isDisabled} onClick={() => onClick}>
+    <button
+      className={buttonStyles}
+      disabled={isDisabled}
+      onClick={() => onClick((label ?? text).toLowerCase())}
+    >
       {text}
     </button>
   )
@@ -36,6 +41,7 @@ export default Button
 
 Button.propTypes = {
   text: string.isRequired,
+  label: string,
   isLoading: bool,
   color: oneOf(Object.keys(colors)),
   isLightColor: bool,
