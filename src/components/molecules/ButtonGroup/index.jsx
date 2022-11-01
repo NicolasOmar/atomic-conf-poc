@@ -1,4 +1,5 @@
 import { arrayOf, shape } from 'prop-types'
+// COMPONENTES
 import Button from '../../atoms/Button'
 
 const ButtonGroup = ({ buttons = null }) => {

@@ -1,4 +1,5 @@
 import ColumnGrid from '.'
+// CONSTANTES
 import ROUTES from '../../../constants/routes.json'
 
 export default {

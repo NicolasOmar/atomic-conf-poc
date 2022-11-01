@@ -1,4 +1,5 @@
 import Card from '.'
+// CONSTANTES
 import ROUTES from '../../../constants/routes.json'
 
 export default {

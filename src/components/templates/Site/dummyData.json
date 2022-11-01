@@ -9,9 +9,9 @@
     "size": "12",
     "props": {
       "buttons": [
-        { "text": "uno" },
-        { "text": "dos" },
-        { "text": "tres" }
+        { "text": "uno", "color": "info" },
+        { "text": "dos", "color": "danger" },
+        { "text": "tres", "color": "success" }
       ]
     }
   },

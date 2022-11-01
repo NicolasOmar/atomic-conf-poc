@@ -1,7 +1,5 @@
-import { element } from 'prop-types'
-import { string } from 'prop-types'
-import { arrayOf } from 'prop-types'
-import { oneOfType, shape } from 'prop-types'
+import { element, string, arrayOf, oneOfType, shape } from 'prop-types'
+// COMPONENTES
 import Image from '../../atoms/Image'
 
 const Card = ({ header = null, image = null, content = null, footer = null }) => {
@@ -46,8 +44,8 @@ const Card = ({ header = null, image = null, content = null, footer = null }) =>
 export default Card
 
 Card.propTypes = {
-  header: oneOfType([element, arrayOf(element)]),
+  header: oneOfType([element, arrayOf(element), string]),
   image: shape(Image.propTypes),
-  content: oneOfType([element, arrayOf(element)]),
+  content: oneOfType([element, arrayOf(element), string]),
   footer: arrayOf(shape({ text: string }))
 }

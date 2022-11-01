@@ -1,8 +1,9 @@
-import { arrayOf, shape } from 'prop-types'
+import { arrayOf, shape, oneOf } from 'prop-types'
+// COMPONENTES
 import Card from '../../molecules/Card'
-import bulmaStyles from '../../../constants/bulma-styles.json'
-import { oneOf } from 'prop-types'
 import Column from '../../molecules/Column'
+// CONSTANTES
+import bulmaStyles from '../../../constants/bulma-styles.json'
 
 const { columnSizes } = bulmaStyles
 

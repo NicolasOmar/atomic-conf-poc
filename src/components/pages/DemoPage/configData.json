@@ -1,0 +1,34 @@
+[
+  {
+    "size": "12",
+    "props": {
+      "title": "WebConf LATAM 2022 | Diseño Atómico"
+    }
+  },
+  {
+    "size": "12",
+    "props": {
+      "buttons": [
+        {
+          "text": "Café",
+          "color": "info"
+        },
+        {
+          "text": "Hardware",
+          "color": "danger"
+        },
+        {
+          "text": "Salsa",
+          "color": "success"
+        }
+      ]
+    }
+  },
+  {
+    "size": "12",
+    "props": {
+      "cardSize": "4",
+      "cards": [ ]
+    }
+  }
+]

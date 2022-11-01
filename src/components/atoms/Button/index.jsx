@@ -1,4 +1,5 @@
-import { string, bool, oneOf } from 'prop-types'
+import { string, bool, oneOf, func } from 'prop-types'
+// CONSTANTES
 import bulmaStyles from '../../../constants/bulma-styles.json'
 
 const { colors, commonSizes } = bulmaStyles
@@ -11,7 +12,8 @@ const Button = ({
   isOutlined = false,
   isRounded = false,
   size = 'default',
-  isDisabled = false
+  isDisabled = false,
+  onClick = null
 }) => {
   const btnColor = `
     ${color ? ` ${colors[color]}` : ''}
@@ -24,7 +26,7 @@ const Button = ({
   const buttonStyles = `button${btnColor}${btnSize}`
 
   return (
-    <button className={buttonStyles} disabled={isDisabled}>
+    <button className={buttonStyles} disabled={isDisabled} onClick={() => onClick}>
       {text}
     </button>
   )
@@ -40,5 +42,6 @@ Button.propTypes = {
   isOutlined: bool,
   isRounded: bool,
   size: oneOf(Object.keys(commonSizes)),
-  isDisabled: bool
+  isDisabled: bool,
+  onClick: func
 }

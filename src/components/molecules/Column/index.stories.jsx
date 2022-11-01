@@ -1,6 +1,7 @@
 import Column from '.'
-import bulmaStyles from '../../../constants/bulma-styles.json'
+// CONSTANTES
 import ROUTES from '../../../constants/routes.json'
+import bulmaStyles from '../../../constants/bulma-styles.json'
 
 export default {
   title: `${ROUTES.STORYBOOK.MOLECULES}/Column`,

@@ -1,4 +1,5 @@
 import { bool, oneOf, string } from 'prop-types'
+// CONSTANTES
 import bulmaStyles from '../../../constants/bulma-styles.json'
 
 const { colors, commonSizes } = bulmaStyles

@@ -1,4 +1,5 @@
 import { arrayOf, bool, shape } from 'prop-types'
+// COMPONENTES
 import Column from '../../molecules/Column'
 
 const ColumnGrid = ({

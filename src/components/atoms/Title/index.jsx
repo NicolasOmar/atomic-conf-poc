@@ -1,4 +1,5 @@
 import { string, oneOf } from 'prop-types'
+// CONSTANTES
 import bulmaStyles from '../../../constants/bulma-styles.json'
 
 const { textSizes } = bulmaStyles
