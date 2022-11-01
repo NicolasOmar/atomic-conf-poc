@@ -2,6 +2,7 @@
   "STORYBOOK": {
     "ATOMS": "WebConf 2022/Átomos",
     "MOLECULES": "WebConf 2022/Moléculas",
-    "ORGANISMS": "WebConf 2022/Organismos"
+    "ORGANISMS": "WebConf 2022/Organismos",
+    "TEMPLATES": "WebConf 2022/Plantillas"
   }
 }
