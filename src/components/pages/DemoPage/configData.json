@@ -11,14 +11,17 @@
       "buttons": [
         {
           "text": "Café",
+          "label": "coffee",
           "color": "info"
         },
         {
           "text": "Hardware",
+          "label": "hardware",
           "color": "danger"
         },
         {
           "text": "Salsa",
+          "label": "salsa",
           "color": "success"
         }
       ]
