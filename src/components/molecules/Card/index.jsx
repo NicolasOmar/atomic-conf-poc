@@ -26,7 +26,7 @@ const Card = ({ header = null, image = null, content = null, footer = null }) =>
     footer ? (
       <footer className="card-footer">
         {footer.map(({ text }, i) => (
-          <a key={`card-footer-${i}`} href="#" className="card-footer-item">
+          <a key={`card-footer-${i}`} href="/" className="card-footer-item">
             {text}
           </a>
         ))}

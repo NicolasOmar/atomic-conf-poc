@@ -13,7 +13,7 @@ const Image = ({
 
   return (
     <figure className={imageSize}>
-      <img className={imageStyles} src={src} />
+      <img className={imageStyles} src={src} alt="" />
     </figure>
   )
 }
