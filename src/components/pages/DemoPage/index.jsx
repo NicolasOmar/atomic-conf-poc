@@ -12,15 +12,19 @@ const DemoPage = () => {
   useEffect(() => {
     const callApi = async () => {
       const response = await axios.get(`https://api.unsplash.com/search/photos`, {
-        headers: { Authorization: `Client-ID ${process.env.REACT_APP_API_KEY}` },
+        headers: {
+          Authorization: `Client-ID ${process.env.REACT_APP_API_KEY}`,
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
         params: { query: queryWord }
       })
 
       setloadedCards(
-        response.data.results.map(({ description, links }) => ({
-          content: <p>{description}</p>,
+        response.data.results.map(({ description, urls }) => ({
+          content: description ? <p>{description}</p> : null,
           image: {
-            src: links.html
+            src: urls.full
           }
         }))
       )
