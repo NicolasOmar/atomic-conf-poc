@@ -7,11 +7,32 @@ export default {
   title: `${ROUTES.STORYBOOK.ATOMS}/Title`,
   component: Title,
   argTypes: {
+    title: {
+      description: 'Texto del título'
+    },
     titleSize: {
+      description: 'Tamaño del título',
+      table: {
+        type: {
+          summary: Object.keys(bulmaStyles.textSizes).join(', ')
+        }
+      },
       options: Object.keys(bulmaStyles.textSizes)
     },
+    subtitle: {
+      description: 'Texto del subtítulo'
+    },
     subtitleSize: {
+      description: 'Tamaño del subtítulo',
+      table: {
+        type: {
+          summary: Object.keys(bulmaStyles.textSizes).join(', ')
+        }
+      },
       options: Object.keys(bulmaStyles.textSizes)
+    },
+    isCentered: {
+      description: 'Indica si el texto están centrado'
     }
   }
 }
