@@ -1,12 +1,19 @@
 {
   "title": {
-    "size": "12",
+    "size": "10",
+    "styles": {
+      "margin": "2% 0 1% 0"
+    },
     "props": {
-      "title": "WebConf LATAM 2022 | Diseño Atómico"
+      "title": "WebConf LATAM 2022 | Diseño Atómico",
+      "isCentered": true
     }
   },
   "buttonGroup": {
-    "size": "12",
+    "size": "10",
+    "styles": {
+      "marginBottom": "1%"
+    },
     "props": {
       "buttons": [
         {
@@ -24,11 +31,12 @@
           "label": "salsa",
           "color": "success"
         }
-      ]
+      ],
+      "isCentered": true
     }
   },
   "cardList": {
-    "size": "12",
+    "size": "10",
     "props": {
       "cardSize": "4",
       "cards": []

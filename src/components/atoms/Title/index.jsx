@@ -1,4 +1,4 @@
-import { string, oneOf } from 'prop-types'
+import { string, oneOf, bool } from 'prop-types'
 // CONSTANTES
 import bulmaStyles from '../../../constants/bulma-styles.json'
 
@@ -8,10 +8,15 @@ const Title = ({
   title = null,
   titleSize = 'default',
   subtitle = null,
-  subtitleSize = 'default'
+  subtitleSize = 'default',
+  isCentered = false
 }) => {
-  const titleStyle = `title ${textSizes[titleSize]}`
-  const subtitleStyle = `title ${textSizes[subtitleSize]}`
+  const titleStyle = `title ${textSizes[titleSize]}${
+    isCentered ? ' has-text-centered' : ''
+  }`
+  const subtitleStyle = `title ${textSizes[subtitleSize]}${
+    isCentered ? ' has-text-centered' : ''
+  }`
 
   return (
     <>
@@ -27,5 +32,6 @@ Title.propTypes = {
   title: string,
   titleSize: oneOf(Object.keys(textSizes)),
   subtitle: string,
-  subtitleSize: oneOf(Object.keys(textSizes))
+  subtitleSize: oneOf(Object.keys(textSizes)),
+  isCentered: bool
 }

@@ -1,7 +1,8 @@
-import { bool, any, func, shape } from 'prop-types'
+import { bool, any, func, shape, object } from 'prop-types'
 // COMPONENTES
 import ButtonGroup from '../../molecules/ButtonGroup'
 import Title from '../../atoms/Title'
+import ProgressBar from '../../atoms/ProgressBar'
 import CardList from '../../organisms/CardList'
 import ColumnGrid from '../../organisms/ColumnGrid'
 // CONSTANTES
@@ -15,9 +16,10 @@ const Site = ({
   useDummyData = false,
   siteConfig = null,
   cards = [],
+  isLoading = false,
   onClick = null
 }) => {
-  const columnConfig = useDummyData ? dummyData : siteConfig ?? dummyData
+  const columnConfig = useDummyData ? dummyData : siteConfig
   const gridConfig = {
     isMultiline: true,
     isHorizontalCenter: true,
@@ -25,11 +27,13 @@ const Site = ({
       {
         size: columnConfig.title.size,
         offset: columnConfig.title.offset,
+        styles: columnConfig.title.styles,
         children: <Title {...columnConfig.title.props} />
       },
       {
         size: columnConfig.buttonGroup.size,
         offset: columnConfig.buttonGroup.offset,
+        styles: columnConfig.buttonGroup.styles,
         children: (
           <ButtonGroup
             {...{
@@ -42,7 +46,10 @@ const Site = ({
       {
         size: columnConfig.cardList.size,
         offset: columnConfig.cardList.offset,
-        children: (
+        styles: columnConfig.cardList.styles,
+        children: isLoading ? (
+          <ProgressBar isInLoop={true} color={'primary'} />
+        ) : (
           <CardList
             {...{
               ...columnConfig.cardList.props,
@@ -65,19 +72,23 @@ Site.propTypes = {
     title: {
       size: Object.keys(columnSizes),
       offset: Object.keys(columnOffsets),
+      styles: object,
       children: shape(Title.propTypes)
     },
     buttonGroup: {
       size: Object.keys(columnSizes),
       offset: Object.keys(columnOffsets),
+      styles: object,
       children: shape(ButtonGroup.propTypes)
     },
     cardList: {
       size: Object.keys(columnSizes),
       offset: Object.keys(columnOffsets),
+      styles: object,
       children: shape(CardList.propTypes)
     }
   }).isRequired,
   cards: any,
+  isLoading: bool,
   onClick: func
 }

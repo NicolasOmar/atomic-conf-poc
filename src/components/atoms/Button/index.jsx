@@ -16,15 +16,11 @@ const Button = ({
   isDisabled = false,
   onClick = null
 }) => {
-  const btnColor = `
-    ${color ? ` ${colors[color]}` : ''}
-    ${isLightColor ? ' is-light' : ''}
-    ${isOutlined ? ' is-outlined' : ''}
-    ${isRounded ? ' is-rounded' : ''}
-    ${isLoading ? ' is-loading' : ''}
-  `
-  const btnSize = `${size ? ` ${commonSizes[size]}` : ''}`
-  const buttonStyles = `button${btnColor}${btnSize}`
+  const buttonStyles = `button${color ? ` ${colors[color]}` : ''}${
+    isLightColor ? ' is-light' : ''
+  }${isOutlined ? ' is-outlined' : ''}${isRounded ? ' is-rounded' : ''}${
+    isLoading ? ' is-loading' : ''
+  }${size ? ` ${commonSizes[size]}` : ''}`
 
   return (
     <button
