@@ -8,7 +8,6 @@ const Column = ({ size = '1', offset = false, children = null, styles = {} }) =>
   const columnStyles = `column${size ? ` ${columnSizes[size]}` : 'is-1'}${
     offset ? ` ${columnOffsets[offset]}` : ''
   }`
-  console.warn(styles)
 
   return (
     <section className={columnStyles} style={styles}>
