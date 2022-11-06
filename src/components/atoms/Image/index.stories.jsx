@@ -23,7 +23,7 @@ export default {
       description: 'Le da un formato de imagen en particular en base a varios ratios',
       table: {
         type: {
-          summary: Object.keys(bulmaStyles.imgSizes).join(', ')
+          summary: Object.keys(bulmaStyles.imgSizes).join(' | ')
         }
       },
       options: Object.keys(bulmaStyles.imgSizes)

@@ -4,7 +4,27 @@ import ROUTES from '../../../constants/routes.json'
 
 export default {
   title: `${ROUTES.STORYBOOK.ORGANISMS}/ColumnGrid`,
-  component: ColumnGrid
+  component: ColumnGrid,
+  argTypes: {
+    columns: {
+      description: 'Lista de Columnas',
+      table: {
+        type: {
+          summary: 'Column[]',
+          detail: null
+        }
+      }
+    },
+    isVerticalCenter: {
+      description: 'Alinea las columnas en forma vertical'
+    },
+    isHorizontalCenter: {
+      description: 'Alinea las columnas en forma horizontal'
+    },
+    isMultiline: {
+      description: 'Muestra las columnas juntas (siempre que de el ancho de la página)'
+    }
+  }
 }
 
 const Template = args => <ColumnGrid {...args} />

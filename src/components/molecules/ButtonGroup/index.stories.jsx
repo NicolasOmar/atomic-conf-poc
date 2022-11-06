@@ -8,10 +8,11 @@ export default {
   component: ButtonGroup,
   argTypes: {
     buttons: {
-      description: 'Array de botones',
+      description: 'Lista de botones',
       table: {
         type: {
-          summary: `Button[]`
+          summary: `Button[]`,
+          detail: null
         }
       }
     },

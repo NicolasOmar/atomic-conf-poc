@@ -4,7 +4,29 @@ import ROUTES from '../../../constants/routes.json'
 
 export default {
   title: `${ROUTES.STORYBOOK.MOLECULES}/Card`,
-  component: Card
+  component: Card,
+  argTypes: {
+    header: {
+      description:
+        'Encabezado. Se le puede insertar texto o componentes de React o nativo'
+    },
+    image: {
+      description: 'Imagen que mostrará la tarjeta',
+      table: {
+        type: {
+          summary: 'Image',
+          detail: null
+        }
+      }
+    },
+    content: {
+      description:
+        'Contenido principal. Se le puede insertar texto o componentes de React o nativo'
+    },
+    footer: {
+      description: 'Conjunto de links que sirven como opciones'
+    }
+  }
 }
 
 const Template = args => <Card {...args} />

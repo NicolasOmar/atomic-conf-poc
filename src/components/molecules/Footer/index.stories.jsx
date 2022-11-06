@@ -1,9 +1,15 @@
 import Footer from '.'
+// CONSTANTES
 import ROUTES from '../../../constants/routes.json'
 
 export default {
   title: `${ROUTES.STORYBOOK.MOLECULES}/Footer`,
-  component: Footer
+  component: Footer,
+  argTypes: {
+    children: {
+      description: 'Contenido principal. Se le puede solo 1 componente de React o nativo'
+    }
+  }
 }
 
 const Template = args => <Footer {...args} />

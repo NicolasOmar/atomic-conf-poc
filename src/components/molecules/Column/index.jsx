@@ -4,7 +4,7 @@ import bulmaStyles from '../../../constants/bulma-styles.json'
 
 const { columnSizes, columnOffsets } = bulmaStyles
 
-const Column = ({ size = '1', offset = false, children = null, styles = {} }) => {
+const Column = ({ size = '1', offset = null, children = null, styles = {} }) => {
   const columnStyles = `column${size ? ` ${columnSizes[size]}` : 'is-1'}${
     offset ? ` ${columnOffsets[offset]}` : ''
   }`

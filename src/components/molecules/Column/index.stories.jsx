@@ -8,7 +8,28 @@ export default {
   component: Column,
   argTypes: {
     size: {
+      description: 'Cambia el tamaño de la columna',
+      table: {
+        type: {
+          summary: Object.keys(bulmaStyles.columnSizes).join(' | ')
+        }
+      },
       options: Object.keys(bulmaStyles.columnSizes)
+    },
+    offset: {
+      description: 'Cambia el de margen de la columna con la página',
+      table: {
+        type: {
+          summary: Object.keys(bulmaStyles.columnOffsets).join(' | ')
+        }
+      },
+      options: Object.keys(bulmaStyles.columnOffsets)
+    },
+    children: {
+      description: 'Contenido principal. Se le puede solo 1 componente de React o nativo'
+    },
+    styles: {
+      description: 'Estilos de css (usados en React) para hacer una inyeccion directa'
     }
   }
 }

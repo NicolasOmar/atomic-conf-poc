@@ -14,7 +14,7 @@ export default {
       description: 'Tamaño del título',
       table: {
         type: {
-          summary: Object.keys(bulmaStyles.textSizes).join(', ')
+          summary: Object.keys(bulmaStyles.textSizes).join(' | ')
         }
       },
       options: Object.keys(bulmaStyles.textSizes)
@@ -26,7 +26,7 @@ export default {
       description: 'Tamaño del subtítulo',
       table: {
         type: {
-          summary: Object.keys(bulmaStyles.textSizes).join(', ')
+          summary: Object.keys(bulmaStyles.textSizes).join(' | ')
         }
       },
       options: Object.keys(bulmaStyles.textSizes)

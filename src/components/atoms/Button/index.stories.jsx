@@ -21,7 +21,7 @@ export default {
       description: 'Color del botón',
       table: {
         type: {
-          summary: Object.keys(bulmaStyles.colors).join(', ')
+          summary: Object.keys(bulmaStyles.colors).join(' | ')
         }
       },
       options: Object.keys(bulmaStyles.colors)
@@ -39,7 +39,7 @@ export default {
       description: 'Cambia el tamaño',
       table: {
         type: {
-          summary: Object.keys(bulmaStyles.commonSizes).join(', ')
+          summary: Object.keys(bulmaStyles.commonSizes).join(' | ')
         }
       },
       options: Object.keys(bulmaStyles.commonSizes)

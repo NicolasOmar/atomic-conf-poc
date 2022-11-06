@@ -8,7 +8,23 @@ export default {
   component: CardList,
   argTypes: {
     cardSize: {
+      description:
+        'Tamaño de las cartas (basandonos en el tamaño de columnas, de 1 a 12)',
+      table: {
+        type: {
+          summary: Object.keys(bulmaStyles.columnSizes).join(' | ')
+        }
+      },
       options: Object.keys(bulmaStyles.columnSizes)
+    },
+    cards: {
+      description: 'Lista de tarjetas',
+      table: {
+        type: {
+          summary: `Card[]`,
+          detail: null
+        }
+      }
     }
   }
 }
