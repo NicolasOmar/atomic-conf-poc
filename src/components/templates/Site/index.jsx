@@ -20,45 +20,48 @@ const Site = ({
   onClick = null
 }) => {
   const columnConfig = useDummyData ? dummyData : siteConfig
+  const usedCards = useDummyData ? dummyData?.cardList?.props?.cards || [] : cards
   const gridConfig = {
     isMultiline: true,
     isHorizontalCenter: true,
-    columns: [
-      {
-        size: columnConfig.title.size,
-        offset: columnConfig.title.offset,
-        styles: columnConfig.title.styles,
-        children: <Title {...columnConfig.title.props} />
-      },
-      {
-        size: columnConfig.buttonGroup.size,
-        offset: columnConfig.buttonGroup.offset,
-        styles: columnConfig.buttonGroup.styles,
-        children: (
-          <ButtonGroup
-            {...{
-              ...columnConfig.buttonGroup.props,
-              onClick
-            }}
-          />
-        )
-      },
-      {
-        size: columnConfig.cardList.size,
-        offset: columnConfig.cardList.offset,
-        styles: columnConfig.cardList.styles,
-        children: isLoading ? (
-          <ProgressBar isInLoop={true} color={'primary'} />
-        ) : (
-          <CardList
-            {...{
-              ...columnConfig.cardList.props,
-              cards: cards.length > 0 ? cards : null
-            }}
-          />
-        )
-      }
-    ]
+    columns: columnConfig
+      ? [
+          {
+            size: columnConfig.title.size,
+            offset: columnConfig.title.offset,
+            styles: columnConfig.title.styles,
+            children: <Title {...columnConfig.title.props} />
+          },
+          {
+            size: columnConfig.buttonGroup.size,
+            offset: columnConfig.buttonGroup.offset,
+            styles: columnConfig.buttonGroup.styles,
+            children: (
+              <ButtonGroup
+                {...{
+                  ...columnConfig.buttonGroup.props,
+                  onClick
+                }}
+              />
+            )
+          },
+          {
+            size: columnConfig.cardList.size,
+            offset: columnConfig.cardList.offset,
+            styles: columnConfig.cardList.styles,
+            children: isLoading ? (
+              <ProgressBar isInLoop={true} color={'primary'} />
+            ) : (
+              <CardList
+                {...{
+                  ...columnConfig.cardList.props,
+                  cards: usedCards.length > 0 ? usedCards : null
+                }}
+              />
+            )
+          }
+        ]
+      : []
   }
 
   return <ColumnGrid {...gridConfig} />
@@ -87,7 +90,7 @@ Site.propTypes = {
       styles: object,
       children: shape(CardList.propTypes)
     }
-  }).isRequired,
+  }),
   cards: any,
   isLoading: bool,
   onClick: func
