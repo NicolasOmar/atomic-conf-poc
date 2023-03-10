@@ -45,7 +45,7 @@ Una vez clonado el repo, aparecerán las siguientes carpetas:
 ## Quiero saber más
 | [Presentación](https://docs.google.com/presentation/d/1hT0AUbK7zBjp4yqxOXr9je8JvPR0Flo2d6s15M7SVAc/edit?usp=sharing) | Demos de Diseño Atómico |
 | :--- | :--- |
-| Presentación de la charla usando Google slides | Demostraciones del concepto en 2 páginas para [componentes](https://atomiconfpage.netlify.app/) y el [sitio funcional](https://atomiconfpage.netlify.app/) |
+| Presentación de la charla usando Google slides | Demostraciones del concepto en 2 páginas para [componentes](https://atomiconfpoc.netlify.app/) y el [sitio funcional](https://atomiconfpage.netlify.app/) |
 
 ## Licencia
 **MIT**
